@@ -58,6 +58,12 @@ a {
     background:transparent;
 }
 
+.skip-to-content{
+  color: black;
+  font-weight: bold;
+
+}
+
 /* change colours to suit your needs */
 ins {
     background-color:#ff9;
