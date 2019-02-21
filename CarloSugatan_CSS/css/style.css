@@ -59,7 +59,8 @@ a {
 }
 
 .skip-to-content{
-  color: black;
+  background-color: black;
+  color: white;
   font-weight: bold;
 
 }
