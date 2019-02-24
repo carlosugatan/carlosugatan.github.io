@@ -29,6 +29,10 @@ h1 {
   font-size: 35px;
 }
 
+h1.about {
+  color:white;
+}
+
 ul {
   font-family: 'Open Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
 }
@@ -167,6 +171,7 @@ input, select {
 
 .container {
   display: flex;
+
 }
 
 .container > div {
