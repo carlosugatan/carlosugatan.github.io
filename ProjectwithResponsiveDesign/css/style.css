@@ -18,6 +18,8 @@ body {
 
 body.index {
       background-image: url("../images/bgimage.png");
+      background-color: black;
+
 }
 
 p {
@@ -91,24 +93,45 @@ a {
     font-family: 'Open Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
-/* .skip-to-content{
-  background-color: black;
-  color: white;
-  font-weight: bold;
-
-} */
-
-.skip-to-content {
-  color: #e3eefd; /* same color as background */
-  text-decoration: none;
-  display: hidden;
+a.skip-main {
+    left:-999px;
+    position:absolute;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+    color: #fff;
+    background-color:#000;
+    left: auto;
+    top: auto;
+    width: 30%;
+    height: auto;
+    overflow:auto;
+    margin: 10px 35%;
+    padding:5px;
+    border-radius: 15px;
+    border:4px solid yellow;
+    text-align:center;
+    font-size:1.2em;
+    z-index:999;
 }
 
-.skip-to-content:active, .skip-to-content:focus, .skip-to-content:hover {  /* will only show if you tab or hover over the area  */
-color: #0000FF;
-text-decoration: underline;
-visibility:visible;
-display: inline;
+#mainpage-img{
+  display: block;
+}
+
+.center-aligned{
+  text-align: center;
+}
+
+#mainpage-content{
+  display:block;
+  margin: 0 auto;
+  padding:10px;
+  width:90%;
 }
 
 .intro {
@@ -180,9 +203,78 @@ input, select {
   line-height: 25px;
 }
 
+.maincontent-box{
+  display:block;
+  padding:20px;
+  width: 90%;
+  margin: 20px auto;
+  opacity: 1;
+  position: relative;
+  transition:0.2s ease-in;
+}
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row, .navbar {
-    flex-direction: column;
+.maincontent-box-img{
+  display: block;
+}
+
+.maincontent-box-description{
+  display:block;
+  margin:auto;
+}
+.maincontent-box-description h2{
+  padding:5px 0px;
+}
+.maincontent-box-description p{
+  padding:5px 0px;
+  text-align: center;
+}
+
+/* /////////////////////////////////////
+
+/*for tablets*/
+@media only screen and (min-width : 768px)
+{
+  .maincontent-box{
+    width: 47%;
+    padding: 10px;
   }
+  .maincontent-box-img{
+    display:block;
+    margin:10px auto;
+    padding: 20px 10px 0px 10px;
+    width: 90%;
+  }
+  .maincontent-box-description{
+    display: block;
+    width:90%;
+    vertical-align: top;
+    padding: 0px 10px 10px 20px;
+  }
+  .maincontent-description{
+    text-align: center;
+    margin:auto;
+  }
+
+ }
+
+/* /////////////////////////////////////
+
+/*for laptops*/
+@media only screen and (min-width : 1024px)
+{
+  .maincontent-box{
+    width: 45%;
+    padding:5px;
+    margin: 5px auto;
+    display:inline-block;
+  }
+
+  .maincontent-description{
+    display:inline-block;
+    text-align: center;
+  }
+
+  .maincontent-description>p{
+    text-align: left;
+  }
+}
