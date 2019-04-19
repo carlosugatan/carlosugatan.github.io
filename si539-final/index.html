@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- View port -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <!-- Main CSS file -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
+  <!--Let browser know website is optimized for mobile-->
+
+  <!-- Title -->
+  <title>Guam Travel Site</title>
+</head>
+
+
+<!-- Start -->
+
+<body>
+  <!-- Skip to main content -->
+  <a class="skip-main" href="#main">Skip to main content</a>
+
+<!-- Nav bar -->
+<div class="navbar-fixed">
+    <nav class="blue darken-4">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Guam Travel</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#hotels">Hotels</a>
+            </li>
+            <li>
+              <a href="#restaurants">Restaurants</a>
+            </li>
+            <li>
+              <a href="#gallery">Gallery</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+<!-- Mobile nav bar -->
+<ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="#home">Home</a>
+    </li>
+    <li>
+      <a href="#hotels">Hotels</a>
+    </li>
+    <li>
+      <a href="#restaurants">Restaurants</a>
+    </li>
+    <li>
+      <a href="#gallery">Gallery</a>
+    </li>
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+  </ul>
+
+
+  <!-- Slideshow Banner -->
+  <section class="slider">
+    <ul class="slides">
+      <li>
+        <img src="img/guam-banner.jpg">
+        <div class="caption left-align">
+            <h2>Hafa Adai! Welcome to Guam!</h2>
+        </div>
+      </li>
+      <li>
+        <img src="img/guam-banner2.jpg">
+        <div class="caption left-align">
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Weather Forecast -->
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+            <a class="weatherwidget-io" href="https://forecast7.com/en/13d55144d85/dededo/?unit=us" data-label_1="DEDEDO" data-label_2="WEATHER" data-font="Roboto" data-theme="pure" >DEDEDO WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Guam -->
+  <main id = "main">
+  <section class="section section-icons grey lighten-4 center">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">room</i>
+            <h4>Where is Guam?</h4>
+            <p>It is located at the easternmost point of the United States just near Japan, Philippines, and New Zealand.
+                Specifically, 13.4443° N, 144.7937° E
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">landscape</i>
+            <h4>About Guam</h4>
+            <p>Guam is a tropical paradise with vibrant sunshine, soft sand beaches, and one of the most diverse marine life on Earth! A perfect place to spend your summer!</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card-panel">
+            <i class="material-icons large blue-text">check</i>
+            <h4>Key Facts</h4>
+            <ul>
+                <li><i class="fas fa-chart-area"></i> Area: 544 sq km (210 sq miles)</li>
+                <li><i class="fas fa-user-alt"></i> Population: 164,229 (2017)</li>
+                <li><i class="fas fa-map-marked-alt"></i> Capital: Hagatna</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- HTML Video -->
+  <section class="section center video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/j9I9JmkA5q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+  <!-- Back to top -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
+
+  <!-- Weather Callout  -->
+  <div class = "callout">
+      <div class = "callout-title">Weather</div>
+      <span class = "closebtn" onclick = "this.parentElement.style.display='none';">x</span>
+      <div class = "callout-container">
+        <p> Current Weather in Guam </p>
+        <script type='text/javascript' src='https://darksky.net/widget/default-small/13.5191,144.8378/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=12243f&transparency=false&skyColor=undefined&fontFamily=Arial&customFont=&units=us'></script>
+      </div>
+    </div>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="section blue darken-4 white-text center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+              <p>Guam Travel &copy; 2018</p>
+              <p>Follow us on social media!</p>
+              <!-- Social media links -->
+            <a href="#" class="white-text">
+              <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#" class="white-text">
+              <i class="fab fa-twitter fa-2x"></i>
+              <a href="#" class="white-text">
+                  <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+
+    // Sidenav
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+    // Slider
+    const slider = document.querySelector('.slider');
+    M.Slider.init(slider, {
+      indicators: false,
+      height: 500,
+      transition: 500,
+      interval: 6000
+    });
+
+    // Material Boxed
+    const mb = document.querySelectorAll('.materialboxed');
+    M.Materialbox.init(mb, {});
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+</body>
+
+</html>

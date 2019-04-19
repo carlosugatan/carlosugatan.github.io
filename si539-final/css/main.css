@@ -1,0 +1,98 @@
+
+p.desc {
+  font-size: 17px;
+}
+
+.section-follow .fa-4x {
+  margin: 5px 10px;
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:#12243f; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.callout {
+  position: fixed;
+  bottom: 35px;
+  left: 20px;
+  margin-left: 20px;
+  max-width: 200px;
+  z-index: 5;
+}
+
+.callout-title {
+  padding: 10px 15px;
+  background: #2196F3;
+  opacity: 1;
+  font-size: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: #12243f;
+  color: #ffffff;
+}
+
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #000000;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: #ffffff;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #12243f;
+  color: white;
+}
+
+a.skip-main {
+  left:-999px;
+  position:absolute;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  z-index:-999;
+}
+a.skip-main:focus, a.skip-main:active {
+  color: #fff;
+  background-color:#000;
+  left: auto;
+  top: auto;
+  width: 30%;
+  height: auto;
+  overflow:auto;
+  margin: 10px 35%;
+  padding:5px;
+  border-radius: 15px;
+  border:4px solid yellow;
+  text-align:center;
+  font-size:1.2em;
+  z-index:999;
+} 
