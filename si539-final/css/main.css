@@ -107,7 +107,7 @@ a.skip-main:focus, a.skip-main:active {
 
 @media print {
   body:after{
-       content:url("img/qr-code.png")
+       content:url(https://i.imgur.com/zGRcJ8A.png)
        }
 }
 
