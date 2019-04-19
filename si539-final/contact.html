@@ -13,7 +13,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
     crossorigin="anonymous"></script>
-  <!--Let browser know website is optimized for mobile-->
+ <!-- Form Validation - Javascript/JQuery -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script type="text/javascript" src="js/formvalidation.js"></script>
 
   <!-- Title -->
   <title>Guam Travel Site</title>
@@ -87,84 +89,63 @@
   <section class="slider">
     <ul class="slides">
       <li>
-        <img src="img/guam-banner.jpg" alt = "Guam's beach">
+        <img src="img/guam-banner3.jpg" alt = "A photo collage of Guam">
         <div class="caption left-align">
-            <h1>Hafa Adai! Welcome to Guam!</h1>
         </div>
       </li>
       <li>
-        <img src="img/guam-banner3.jpg" alt = "A collage of different views of Guam">
+        <img src="img/guam-banner2.jpg" alt = "Barbeque and sushi">
         <div class="caption left-align">
         </div>
       </li>
     </ul>
   </section>
 
-  <!-- Weather Forecast -->
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col s12">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/13d55144d85/dededo/?unit=us" data-label_1="DEDEDO" data-label_2="WEATHER" data-font="Roboto" data-theme="pure" aria-label = "Weather of Guam">DEDEDO WEATHER</a>
-          </div>
-        </div>
-      </div>
-  </section> -->
-
-  <!-- About Guam -->
-  <main id = "main">
-  <section class="section section-icons grey lighten-4 center">
+<!-- Contact Us -->
+  <section id="contact" class="section section-contact scrollspy">
     <div class="container">
       <div class="row">
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large blue-text">room</i>
-            <h4>Where is Guam?</h4>
-            <p>It is located at the easternmost point of the United States just near Japan, Philippines, and New Zealand.
-                Specifically, 13.4443° N, 144.7937° E
-            </p>
+        <div class="col s12 m6">
+          <div class="card-panel blue darken-4 white-text center">
+            <i class="material-icons">email</i>
+            <h5>Contact Us</h5>
+            <p>Did we convince you to book a trip to Guam? <br>Contact us and we will take care of your flight, hotel, and transportation!</p>
+          </div>
+          <ul class="collection with-header">
+            <li class="collection-header">
+              <h4>Location</h4>
+            </li>
+            <li class="collection-item">Guam Travel Agency</li>
+            <li class="collection-item">155 Tumon Road</li>
+            <li class="collection-item">Guam, USA 94014</li>
+          </ul>
+        </div>
+
+        <!-- Form -->
+    <form>
+        <div class="col s12 m6">
+          <div class="card-panel grey lighten-3">
+            <h5>Please fill out this form</h5>
+            <div class="input-field col s12">
+                <input type="text" placeholder="Name" class="validate" required="">
+            </div>
+            <div class="input-field col s12">
+                <input id="email1" placeholder="Email"  type="email" class="validate" required="">
+            </div>
+            <div class="input-field col s12">
+                <input id="phonenum" placeholder="Phone" type="tel" class="validate" required="">
+            </div>
+            <button class="btn waves-effect waves-light blue darken-4" type="submit" name="action">Submit</button>
           </div>
         </div>
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large blue-text">landscape</i>
-            <h4>About Guam</h4>
-            <p>Guam is a tropical paradise with vibrant sunshine, soft sand beaches, and one of the most diverse marine life on Earth! A perfect place to spend your summer!</p>
-          </div>
-        </div>
-        <div class="col s12 m4">
-          <div class="card-panel">
-            <i class="material-icons large blue-text">check</i>
-            <h4>Key Facts</h4>
-            <ul>
-                <li><i class="fas fa-chart-area"></i> Area: 544 sq km (210 sq miles)</li>
-                <li><i class="fas fa-user-alt"></i> Population: 164,229 (2017)</li>
-                <li><i class="fas fa-map-marked-alt"></i> Capital: Hagatna</li>
-              </ul>
-          </div>
-        </div>
+    </form>
       </div>
     </div>
+
   </section>
-
-
-  <!-- HTML Video -->
-  <section class="section center video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/j9I9JmkA5q0" aria-label = "'Only on Guam' Youtube video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-    </section>
 
   <!-- Back to top -->
   <button onclick="topFunction()" id="myBtn" title="Go to top">Back to top</button>
-
-  <!-- Weather Callout  -->
-  <div class = "callout">
-      <div class = "callout-title">Weather</div>
-      <span class = "closebtn" onclick = "this.parentElement.style.display='none';">x</span>
-      <div class = "callout-container">
-        <p> Current Weather in Guam </p>
-        <script type='text/javascript' src='https://darksky.net/widget/default-small/13.5191,144.8378/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=12243f&transparency=false&skyColor=undefined&fontFamily=Arial&customFont=&units=us' aria-label = "Weather in Guam"></script>
-      </div>
-    </div>
-
   </main>
 
   <!-- Footer -->
@@ -232,6 +213,7 @@
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
+
   </script>
 
 </body>
