@@ -11,7 +11,7 @@ p.desc {
   color:black;
 }
 
-.card > .card-content > p > a > li > a{
+.card > .card-content > ul > li > a {
   color:black;
 }
 
@@ -21,6 +21,10 @@ h2 {
 
 a{
   color:blue;
+}
+
+a.one:link {
+  color:#ff0000;
 }
 
 #myBtn {
