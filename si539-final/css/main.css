@@ -107,6 +107,6 @@ a.skip-main:focus, a.skip-main:active {
 
 @media print {
   body:after{
-       content:url(http://qtrack.qnimate.com/qtrack.jpg)
+       content:url(img/qr-code.png)
        }
 }
