@@ -104,3 +104,9 @@ a.skip-main:focus, a.skip-main:active {
   font-size:1.2em;
   z-index:999;
 } 
+
+@media print {
+  body:after{
+       content:url(http://qtrack.qnimate.com/qtrack.jpg)
+       }
+}
