@@ -97,14 +97,10 @@
     <div class="container">
       <div class="row">
         <div class="col s12">
-            <a class="weatherwidget-io" href="https://forecast7.com/en/13d55144d85/dededo/?unit=us" data-label_1="DEDEDO" data-label_2="WEATHER" data-font="Roboto" data-theme="pure" >DEDEDO WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+            <a class="weatherwidget-io" href="https://forecast7.com/en/13d55144d85/dededo/?unit=us" data-label_1="DEDEDO" data-label_2="WEATHER" data-font="Roboto" data-theme="pure" aria-label = "Weather of Guam">DEDEDO WEATHER</a>
           </div>
         </div>
       </div>
-    </div>
   </section>
 
   <!-- About Guam -->
@@ -146,7 +142,7 @@
 
   <!-- HTML Video -->
   <section class="section center video">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/j9I9JmkA5q0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/j9I9JmkA5q0" aria-label = "'Only on Guam' Youtube video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
     </section>
 
   <!-- Back to top -->
@@ -158,7 +154,7 @@
       <span class = "closebtn" onclick = "this.parentElement.style.display='none';">x</span>
       <div class = "callout-container">
         <p> Current Weather in Guam </p>
-        <script type='text/javascript' src='https://darksky.net/widget/default-small/13.5191,144.8378/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=12243f&transparency=false&skyColor=undefined&fontFamily=Arial&customFont=&units=us'></script>
+        <script type='text/javascript' src='https://darksky.net/widget/default-small/13.5191,144.8378/us12/en.js?width=100%&height=70&title=Full Forecast&textColor=ffffff&bgColor=12243f&transparency=false&skyColor=undefined&fontFamily=Arial&customFont=&units=us' aria-label = "Weather in Guam" ></script>
       </div>
     </div>
 
@@ -220,6 +216,10 @@
         document.getElementById("myBtn").style.display = "none";
       }
     }
+    
+    // weather 
+    !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+
 
     // When the user clicks on the button, scroll to the top of the document
     function topFunction() {
