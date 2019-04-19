@@ -8,7 +8,7 @@ p.desc {
 }
 
 .card > .card-content > p > a {
-  color:blue;
+  color:black;
 }
 
 h2 {
@@ -16,6 +16,10 @@ h2 {
 }
 
 a{
+  color:blue;
+}
+
+a.card-link{
   color:blue;
 }
 
