@@ -15,6 +15,9 @@ label {
   visibility: hidden;
 }
 
+h2 {
+  font-size: 45px;
+}
 
 #myBtn {
   display: none; /* Hidden by default */
