@@ -11,6 +11,10 @@ p.desc {
   color:black;
 }
 
+.card > .card-content > p > a > li > a{
+  color:black;
+}
+
 h2 {
   font-size: 45px;
 }
